@@ -1,0 +1,15 @@
+
+.car_cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 47px;
+    margin-bottom: 135px;
+}
+
+.car_desc{
+    font-weight: 500;
+    font-size: 16px;
+    color: #8b8e99;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}

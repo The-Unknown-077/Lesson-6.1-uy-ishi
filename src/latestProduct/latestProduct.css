@@ -1,0 +1,101 @@
+
+.latest_spoiler{
+    font-weight: 500;
+    text-align: center;
+    color: #3858d6;
+}
+
+.latest_title{
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+}
+
+.latest_context{
+    margin-bottom: 65px;
+}
+
+
+.latest_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 69px;
+}
+
+.image{
+    padding: 30px 41px;
+    background: #F6F6F6;
+    position: relative;
+}
+
+.image img{
+    transition: .4s;
+}
+
+.img_icons{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    transition: 0.3s ease-in;
+}
+
+.image img:hover{
+    scale: 1.05;
+}
+
+.image:hover .img_icons{
+    opacity: 1;
+}
+
+.latest_cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 49px;
+}
+
+.c_title{
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.c_stars{
+    margin-bottom: 12px;
+}
+
+.c_price{
+    display: flex;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.c_price s{
+    color: #666;
+}
+
+
+.l_btn{
+    padding: 15px 60px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+    background: #3b5bfd;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    transition: .4s;
+    margin-bottom: 135px;
+}
+
+.l_btn:hover{
+    background: #4d63d4;
+    scale: 1.05;
+}

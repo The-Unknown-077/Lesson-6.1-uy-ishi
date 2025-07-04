@@ -1,0 +1,96 @@
+
+.header{
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: .3s;
+    background: transparent;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+    margin-bottom: 102px;
+}
+
+.navbar_collection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.header.shrink{
+    box-shadow: 0 5px 5px #0001;
+    color: black;
+    backdrop-filter: blur(10px);
+}
+
+.header.shrink .navbar{
+    height: 80px;
+}
+
+
+
+.navbar_item{
+    transition: .3s;
+}
+
+.navbar_item:hover{
+    scale: 1.15;
+}
+
+.nav_icons{
+    transition: .4s;
+}
+
+.nav_icons:hover{
+    transform: scale(1.025)
+}
+
+.nav_icons{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.navbar_link h3{
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    color: #8b8e99;
+}
+
+.menu_bar{
+    opacity: 0;
+}
+
+.drop_down{
+    position: absolute;
+    background:rgba(207, 207, 207, 0.721);
+    width: 150px;
+    padding: 10px 0;
+    line-height: 2;
+    transform: scaleY(0);
+    transition: .3s ease;
+    transform-origin: top;
+    border-radius: 0 15px 15px 15px;
+}
+.drop_down li{
+    transition: .3s ease;
+    color: black;
+}
+.drop_down li:hover{
+    padding: 0 10px;
+    cursor: pointer;
+    background: #babfc2;
+}
+.navbar_item:hover .drop_down{
+    transform: scaleY(1);
+}
